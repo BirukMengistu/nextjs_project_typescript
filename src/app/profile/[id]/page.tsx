@@ -4,12 +4,13 @@ import React from 'react'
 const UserProfile = ({params}:any) => {
   return (
     <div className='flex flex-col 
-    items-center justify-center py-2 '>
-      <h1>Profile</h1>
-      <hr/>
-      <p className="text-4xl">
-        ProfilePage <span className="p-2 rounded">{params.id}</span>
+    items-center justify-center p-8 '>
+      
+      
+      <p className="text-4xl mt-4">
+        ProfilePage user <span className="p-4 rounded-full bg-slate-500">{params.id}</span>
       </p>
+      <hr/>
     </div>
   )
 }
