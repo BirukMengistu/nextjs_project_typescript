@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const Login = () => {
@@ -20,6 +21,9 @@ const Login = () => {
           <div className="mt-4 flex items-center justify-between">
            <button type="button" className='bg-white p-2 rounded focus:shadow-outline text-gray-900 hover:bg-white-900 focus:outline-none'>Login</button>
            <a  className=' p-2 rounded text-white hover:bg-white-900 focus:outline-none'>Forget password</a>
+          </div>
+          <div className="mt-4 flex items-center text-white">
+            <p>If you dont have an account - <Link className='text-lg my-2 hover:text-green-400 ' href='/signup'>Register</Link></p>
           </div>
     </div>
   )
